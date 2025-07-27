@@ -8,7 +8,7 @@ version = "${version}"
 displayName = "Hexstages"
 logoFile = "assets/hexstages/icon.png"
 authors = "anabsolutesloth"
-description = "Hexcasting x Gamestages compatiblity mod, allowing restricting casting specific Hex patterns based on Gamestages."
+description = "Hexcasting x Gamestages compatibility mod, allowing restricting casting specific hex Actions when players lack specified Stages."
 
 [[dependencies.hexstages]]
 modId = "forge"
