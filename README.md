@@ -18,3 +18,6 @@ To configure, create a Datapack with JSON files in `/hexstages/staged_actions/` 
 ```
 This configuration will restrict the casting of **Greater Teleport** and **Wayfarer's Flight**, to require the "expert" Stage.
 Casting a staged action without the required Stage will cause a 3 second Blindness mishap.
+
+- [CurseForge](https://curseforge.com/minecraft/mc-mods/hexstages)
+- [Modrinth](https://modrinth.com/mod/hexstages)
