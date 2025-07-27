@@ -4,6 +4,7 @@ import net.minecraft.resources.ResourceLocation
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import com.emperdog.hexstages.registry.HexstagesActions
+import com.google.gson.GsonBuilder
 
 object Hexstages {
     const val MODID = "hexstages"
@@ -19,4 +20,7 @@ object Hexstages {
             HexstagesActions,
         )
     }
+
+    val dataLoader: HexstagesDataLoader = HexstagesDataLoader(GsonBuilder().create())
+        get() = field
 }

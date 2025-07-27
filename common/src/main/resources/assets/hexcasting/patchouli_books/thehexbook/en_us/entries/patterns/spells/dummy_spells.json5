@@ -1,9 +1,0 @@
-{
-  name: "hexstages.book.patterns.spells.dummy_spells",
-  category: "hexcasting:patterns/spells",
-  icon: "minecraft:spruce_sign",
-  advancement: "hexcasting:root",
-  pages: [
-
-  ],
-}

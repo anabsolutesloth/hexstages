@@ -3,14 +3,13 @@ package com.emperdog.hexstages.mixin;
 import at.petrak.hexcasting.api.casting.PatternShapeMatch;
 import at.petrak.hexcasting.api.casting.eval.CastingEnvironment;
 import at.petrak.hexcasting.api.casting.eval.env.PlayerBasedCastEnv;
-import com.emperdog.hexstages.HexstagesConfig;
+import com.emperdog.hexstages.Hexstages;
 import com.emperdog.hexstages.HexstagesMishap;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.darkhax.gamestages.GameStageHelper;
 import net.minecraft.resources.ResourceLocation;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 
@@ -29,14 +28,11 @@ public abstract class CastingEnvironmentMixin {
 
     @Unique
     private void hexstages$isPatternStaged(PlayerBasedCastEnv playerCastEnv, ResourceLocation actionKey) throws HexstagesMishap {
-        String actionStage = HexstagesConfig.INSTANCE.getActionStage(actionKey);
-        //Hexstages.LOGGER.info("actionStage: {}", actionStage);
+        String actionStage = Hexstages.INSTANCE.getDataLoader().getActionStage(actionKey);
+        //Hexstages.LOGGER.info("actionStage: {}, actionKey: {}", actionStage, actionKey);
         if(actionStage != null
                 && !GameStageHelper.hasStage(playerCastEnv.getCaster(), actionStage)) {
             throw new HexstagesMishap(actionStage, actionKey);
         }
     }
-
-    @Shadow
-    protected abstract ResourceLocation actionKey(PatternShapeMatch match);
 }
