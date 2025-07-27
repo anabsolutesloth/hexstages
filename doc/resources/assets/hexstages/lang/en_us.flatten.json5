@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    hexstages: {
+      title: "Hexstages Book",
+      description: "Hexcasting x Gamestages compatiblity mod, allowing restricting casting specific Hex patterns based on Gamestages.",
+    },
+  }
+}

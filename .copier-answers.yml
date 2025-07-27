@@ -1,0 +1,21 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+# https://copier.readthedocs.io/en/stable/updating/#never-change-the-answers-file-manually
+_commit: v2.0.4
+_src_path: gh:FallingColors/hexdummy
+advanced: true
+capitalize_platforms: false
+classname: Hexstages
+default_branch: main
+description: Hexcasting x Gamestages compatiblity mod, allowing restricting casting
+    specific Hex patterns based on Gamestages.
+display_name: Hexstages
+github_repo: hexstages
+github_user: anabsolutesloth
+homepage_url: https://anabsolutesloth.github.io/hexstages
+java_package: com.emperdog.hexstages
+kotlin_package: com.emperdog.hexstages
+mappings_name: Mojmap
+minecraft_version_in_mod_version: false
+mod_version: 0.1.0
+modid: hexstages
+sources_url: https://github.com/anabsolutesloth/hexstages
